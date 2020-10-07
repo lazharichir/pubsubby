@@ -1,6 +1,6 @@
 {
 	"name": "pubsubby",
-	"version": "1.0.1",
+	"version": "0.0.1",
 	"description": "Typed publish-subscribe (PubSub) library for TypeScript.",
 	"author": "Lazhar Ichir",
 	"license": "GNU General Public License v3.0",
@@ -28,7 +28,6 @@
 		"lint:fix": "eslint --fix 'src/**/*.ts'",
 		"clean": "rimraf ./dist && rimraf ./coverage",
 		"ready": "npm run clean && npm run lint && npm run test && npm run build",
-		"prepublishOnly": "npm run ready",
 		"preversion": "npm run ready",
 		"postversion": "git push && git push --tags"
 	},
