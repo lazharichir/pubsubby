@@ -1,6 +1,6 @@
 {
 	"name": "pubsubby",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Typed publish-subscribe (PubSub) library for TypeScript.",
 	"author": "Lazhar Ichir",
 	"license": "GNU General Public License v3.0",
