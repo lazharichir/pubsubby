@@ -27,7 +27,10 @@
 		"lint": "eslint 'src/**/*.ts'",
 		"lint:fix": "eslint --fix 'src/**/*.ts'",
 		"clean": "rimraf ./dist && rimraf ./coverage",
-		"prepublishOnly": "npm run clean && npm run lint && npm run test && npm run build"
+		"ready": "npm run clean && npm run lint && npm run test && npm run build",
+		"prepublishOnly": "npm run ready",
+		"preversion": "npm run ready",
+		"postversion": "git push && git push --tags"
 	},
 	"devDependencies": {
 		"@types/jest": "^26.0.14",
